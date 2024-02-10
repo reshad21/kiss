@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { FaCaretDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-
 const Navber = () => {
     const [toggle, setToggle] = useState(false)
     const handleDropDown = (data) => {
@@ -8,13 +8,13 @@ const Navber = () => {
     }
     return (
         <div>
-            <div className='bg-[#102027] sticky top-0 left-0 bottom-0 right-0 z-40 mx-auto max-w-6xl'>
+            <div className='bg-[#102027] sticky z-40 mx-auto max-w-6xl h-fit'>
                 <ul className='flex md:gap-0 justify-between items-center'>
                     <li className='grow'>
                         <span className='text-center cursor-pointer py-3 px-4 block text-base md:text-xl font-normal text-white hover:bg-[#29434e]'>Introduction</span>
                     </li>
                     <li className='relative grow'>
-                        <span onClick={() => handleDropDown(!toggle)} className='text-center cursor-pointer py-3 px-4 block text-base md:text-xl font-normal text-white hover:bg-[#29434e] '>Resources</span>
+                        <span onClick={() => handleDropDown(!toggle)} className='text-center cursor-pointer py-3 px-4 text-base md:text-xl font-normal text-white hover:bg-[#29434e] flex justify-center items-center gap-1'><span>Resources</span> <FaCaretDown /></span>
                         {
                             toggle
                             &&
