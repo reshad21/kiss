@@ -41,7 +41,7 @@ const Navber = () => {
                         <span className='text-center cursor-pointer py-3 px-4 block text-base md:text-xl font-normal text-white hover:bg-[#29434e]'>Social</span>
                     </li>
                     <li className='grow'>
-                        <span className='text-center cursor-pointer py-3 px-4 block text-base md:text-xl font-normal text-white hover:bg-[#29434e]'>Etc</span>
+                        <span className='text-center cursor-pointer py-3 px-4 block text-base md:text-xl font-normal text-white hover:bg-[#29434e]'>Features</span>
                     </li>
                 </ul>
             </div>

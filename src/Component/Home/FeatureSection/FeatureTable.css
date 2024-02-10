@@ -1,0 +1,44 @@
+/* FeatureTable.css */
+
+/* Apply border and padding to all th and td elements */
+th,
+td {
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+/* Apply a bottom border to all th and td elements */
+th,
+td {
+    border-bottom: 2px solid #ddd;
+}
+
+/* Apply additional styling to table headers */
+table tr th {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+/* Apply styling to all table cells */
+table tr td {
+    text-align: center;
+    font-size: 19px;
+}
+
+/* Apply specific styling to the first cell in each row */
+table tr td:first-child {
+    font-weight: 700;
+    font-size: 19px;
+    text-align: left;
+}
+
+/* table tr td:nth-child(2),
+table tr td:nth-child(3) {
+    display: flex;
+    align-items: center;
+} */
+
+/* Remove the bottom border from the last row */
+table tr:last-child td {
+    border-bottom: none;
+}
